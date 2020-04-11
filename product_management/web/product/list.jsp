@@ -22,7 +22,7 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items='${requestScope["productList"]}' var="product">
+            <c:forEach items='${requestScope["productList"]}' var="product" begin="0" end="7">
                 <tr>
                     <th>${product.getId()}</th>
                     <td>${product.getName()}</td>
